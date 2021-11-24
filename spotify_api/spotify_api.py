@@ -95,6 +95,16 @@ class SpotifyAPI:
     def get_track(self, _id):
         return self.get_resource(_id, resource_type = "tracks")
     
+    def features(self, _id):
+        if _id == None:
+            raise Exception("An id is required")
+        return self.get_resource(_id, resource_type = "audio-features")
+
+    def audio_analysis(self, _id):
+        if _id == None:
+            raise Exception("An id is required")
+        return self.get_resource(_id, resource_type = "audio-analysis")
+    
     def base_search(self, query_params):
         headers = self.get_resource_header()
         base_endpoint = "https://api.spotify.com/v1"
