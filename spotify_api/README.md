@@ -1,4 +1,4 @@
-# Steps To Replicate Creating a New CSV
+# Steps To Creating a New CSV
 1) separate_csv .py
    1) I think this adds a empty column.
    2) Did this because if we fail processing one block our entire work is not thrown away. 
