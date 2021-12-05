@@ -1,1 +1,2 @@
-# ECS171_Group_Project
+# ECS171_Group1_Project
+
